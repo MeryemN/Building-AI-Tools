@@ -11,7 +11,7 @@ import instructor
 
 #Replace With Your Open AI Key
 open_ai_client = OpenAI(
-     api_key="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",
+     api_key="openai_api_key",
 )
 
 instructor.patch(open_ai_client)
