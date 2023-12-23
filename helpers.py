@@ -1,20 +1,17 @@
 #pydantic example
 from openai import OpenAI
 import os
-from dotenv import load_dotenv
 
 # Load environment variables from the .env file
-load_dotenv()
 
 # Access the OpenAI API key
-openai_api_key = os.getenv("OPENAI_API_KEY")
 
 import instructor
 
 
 #Replace With Your Open AI Key
 open_ai_client = OpenAI(
-     api_key=openai_api_key,
+     api_key="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",
 )
 
 instructor.patch(open_ai_client)
